@@ -121,9 +121,6 @@ button {
   cursor: pointer;
   border: none;
   background-color: transparent;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 }
 
 /*<----------main--------->*/
@@ -182,10 +179,22 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/tel/hero-img-tel-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .hero-image {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tel/hero-img-tel-2x-min.jpg);
+  }
 }
 
 .btn {
